@@ -32,12 +32,15 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 main {
   width: 100vw;
-  max-width: 425px;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -72,7 +75,6 @@ header .desktop-navigation {
 }
 .hero .hero-text {
   width: 90%;
-  max-width: 356.25px;
   text-transform: uppercase;
   font-size: 2rem;
   border: 3px solid hsl(0, 0%, 100%);
@@ -100,10 +102,6 @@ header .desktop-navigation {
   width: 85%;
   font-size: 0.95rem;
   padding: 0 1rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
   color: hsl(0, 0%, 55%);
 }
 .vr .vr-text h1 {
@@ -113,6 +111,10 @@ header .desktop-navigation {
   color: hsl(0, 0%, 0%);
   font-weight: 100;
   margin-bottom: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .project-showcase {
@@ -122,11 +124,18 @@ header .desktop-navigation {
   justify-content: space-evenly;
   gap: 1.5rem;
 }
-.project-showcase picture {
+.project-showcase a {
+  margin-left: 10vw;
+}
+.project-showcase a picture {
   width: 90%;
   position: relative;
+  transition: 0.4s;
 }
-.project-showcase picture .showcase-text {
+.project-showcase a picture:hover {
+  opacity: 0.3;
+}
+.project-showcase a picture .showcase-text {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -137,9 +146,8 @@ header .desktop-navigation {
   font-size: 1.35rem;
   color: hsl(0, 0%, 100%);
   line-height: 1.6rem;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.12rem;
-  opacity: 0.85;
   text-transform: uppercase;
 }
 .project-showcase button {
@@ -150,15 +158,19 @@ header .desktop-navigation {
   letter-spacing: 0.2rem;
   border: 1.6px solid hsl(0, 0%, 0%);
   font-weight: 400;
+  transition: 0.4s;
 }
 .project-showcase button:hover {
   cursor: pointer;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 
 footer {
   background-color: hsl(0, 0%, 0%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 2rem;
   padding: 3rem 0;
@@ -168,6 +180,7 @@ footer ul {
 }
 footer ul li {
   margin-top: 1rem;
+  text-align: center;
 }
 footer ul a {
   color: hsl(0, 0%, 100%);
