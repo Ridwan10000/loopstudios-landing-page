@@ -66,13 +66,6 @@ header .desktop-navigation li:hover .hr-line {
   width: 70%;
   margin-left: 20vw;
 }
-.project-showcase-heading h1 {
-  text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
 .project-showcase-heading button {
   width: 120px;
   height: 35px;
@@ -91,16 +84,8 @@ header .desktop-navigation li:hover .hr-line {
 }
 
 .project-showcase {
-  margin-top: 2rem;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  width: 80vw;
-  grid-gap: 1rem 0;
-  margin-left: 10vw;
-}
-.project-showcase a:nth-child(1) {
-  -moz-columns: 1/2;
-       columns: 1/2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .project-showcase button {
   display: none;

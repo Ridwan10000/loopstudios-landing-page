@@ -86,7 +86,18 @@ header {
         }
     }
 }
+.project-showcase-heading{
+    h1{
+        text-transform: uppercase;
+        @include font-josefin-sans-300;
+        text-align: center;
+    }
+    button{
+        display: none;
+    }
+}
 .project-showcase{
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -117,7 +117,20 @@ header .desktop-navigation {
   font-style: normal;
 }
 
+.project-showcase-heading h1 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+.project-showcase-heading button {
+  display: none;
+}
+
 .project-showcase {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;

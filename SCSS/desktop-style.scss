@@ -74,10 +74,6 @@ header {
     align-items: center;
     width:70%;
     margin-left: calc(100vw * 0.20);
-    h1{
-        text-transform: uppercase;
-        @include font-josefin-sans-300
-    }
     button{
         width: 120px;
         height:35px;
@@ -96,15 +92,8 @@ header {
     }
 }
 .project-showcase{
-    margin-top: 2rem;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    width: 80vw;
-    grid-gap:1rem 0;
-    margin-left: calc(100vw * 0.1);
-    a:nth-child(1){
-        columns: 1 /2;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     button{
         display: none;
     }
