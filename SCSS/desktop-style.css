@@ -23,7 +23,7 @@ header .desktop-navigation li a {
 header .desktop-navigation li .hr-line {
   width: 0;
   outline: none;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 header .desktop-navigation li:hover .hr-line {
   width: 30px;
@@ -83,9 +83,18 @@ header .desktop-navigation li:hover .hr-line {
   color: hsl(0, 0%, 100%);
 }
 
-.project-showcase {
+.project-showcase-heading {
+  width: 60vw;
+}
+.project-showcase-heading button {
+  display: block;
+}
+
+.project-showcase > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem 0;
+  width: 70vw;
 }
 .project-showcase button {
   display: none;
@@ -113,7 +122,7 @@ footer div:nth-child(1) ul li {
 footer div:nth-child(1) ul li .ex-hr-line {
   width: 0;
   outline: none;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 footer div:nth-child(1) ul li:hover .ex-hr-line {
   width: 20px;

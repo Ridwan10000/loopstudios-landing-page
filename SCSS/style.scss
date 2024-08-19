@@ -16,6 +16,7 @@ header {
     top: 40px;
 
     nav {
+        position: relative;
         display: flex;
         justify-content: space-around;
 
@@ -26,12 +27,39 @@ header {
             justify-content: space-between;
         }
     }
-
+    img:hover{
+        cursor: pointer;
+    }
     .desktop-navigation {
         display: none;
     }
 }
-
+.mobile-menue{
+    position: absolute;
+    z-index: 10;
+    top:-130%;
+    width: 100vw;
+    background-color: $black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap:3rem;
+    }
+    a{
+        text-decoration: none;
+        color:$white;
+        font-size: 1.5rem;
+    }
+}
+.mobile-menue-close{
+    display: none;
+}
 .hero {
     background-image: url('../images/mobile/image-hero.jpg');
     background-repeat: no-repeat;
@@ -100,11 +128,17 @@ header {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    gap:1.5rem;
+    & > div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+    }
     a{
-    margin-left: calc(100vw * 0.1);
     picture{
         width:90%;
         position: relative;
@@ -161,11 +195,13 @@ footer{
         a{
             color:$white;
             text-decoration: none;
+            margin-left: -20px;
         }
     }
 
     .social-links{
         margin-top: 2.5rem;
+        margin-left: 30px;
         display: flex;
         gap:1rem;
     }

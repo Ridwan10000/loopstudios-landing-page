@@ -50,6 +50,7 @@ header {
   top: 40px;
 }
 header nav {
+  position: relative;
   display: flex;
   justify-content: space-around;
 }
@@ -59,7 +60,37 @@ header nav ul {
   align-items: center;
   justify-content: space-between;
 }
+header img:hover {
+  cursor: pointer;
+}
 header .desktop-navigation {
+  display: none;
+}
+
+.mobile-menue {
+  position: absolute;
+  z-index: 10;
+  top: -130%;
+  width: 100vw;
+  background-color: hsl(0, 0%, 0%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.mobile-menue ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.mobile-menue a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+
+.mobile-menue-close {
   display: none;
 }
 
@@ -133,12 +164,16 @@ header .desktop-navigation {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 1.5rem;
 }
-.project-showcase a {
-  margin-left: 10vw;
+.project-showcase > div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .project-showcase a picture {
   width: 90%;
@@ -198,9 +233,11 @@ footer ul li {
 footer ul a {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+  margin-left: -20px;
 }
 footer .social-links {
   margin-top: 2.5rem;
+  margin-left: 30px;
   display: flex;
   gap: 1rem;
 }

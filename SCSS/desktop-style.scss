@@ -29,7 +29,7 @@ header {
             .hr-line{
                 width:0;
                 outline:none;
-                transition: all 0.2s;
+                transition: all 0.4s;
             }
             &:hover{
                 .hr-line{
@@ -91,9 +91,19 @@ header {
         }
     }
 }
+.project-showcase-heading{
+    width:calc(100vw - 100vw * 0.4);
+    button{
+        display: block;
+    }
+}
 .project-showcase{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    & > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem 0;
+        width:calc(100vw - 100vw * 0.3);
+    }
     button{
         display: none;
     }
@@ -119,7 +129,7 @@ footer{
                 .ex-hr-line{
                     width:0;
                     outline:none;
-                    transition:all 0.2s;
+                    transition:all 0.4s;
                 }
                 &:hover{
                     .ex-hr-line{
