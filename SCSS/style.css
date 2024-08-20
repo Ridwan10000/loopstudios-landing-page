@@ -79,6 +79,11 @@ header .desktop-navigation {
   justify-content: center;
   align-items: flex-start;
 }
+.mobile-menue .image-and-close {
+  align-self: center;
+  display: flex;
+  gap: 15vw;
+}
 .mobile-menue ul {
   display: flex;
   flex-direction: column;

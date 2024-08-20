@@ -45,7 +45,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+    .image-and-close{
+        align-self: center;
+        display: flex;
+        gap:15vw;
+    }
     ul{
         display: flex;
         flex-direction: column;
