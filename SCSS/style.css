@@ -74,7 +74,7 @@ header .desktop-navigation {
   width: 100vw;
   background-color: hsl(0, 0%, 0%);
   height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -82,21 +82,29 @@ header .desktop-navigation {
 .mobile-menue .image-and-close {
   align-self: center;
   display: flex;
+  flex-direction: row;
   gap: 15vw;
 }
 .mobile-menue ul {
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 3rem;
+}
+.mobile-menue ul div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-menue ul div li:nth-child(2) {
+  margin-right: 4rem;
 }
 .mobile-menue a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
-}
-
-.mobile-menue-close {
-  display: none;
 }
 
 .hero {
@@ -252,4 +260,8 @@ footer p {
   text-align: center;
   font-size: 0.8rem;
   padding-left: 2rem;
+}
+
+.active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

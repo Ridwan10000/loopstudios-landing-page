@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "loopstudios-landing-page",
+			"path": ".."
+		},
+		{
+			"name": "design",
+			"path": "C:/Users/Redwan_/Downloads/loopstudios-landing-page-main/loopstudios-landing-page-main/design"
+		},
+		{
+			"name": "images",
+			"path": "C:/Users/Redwan_/Downloads/loopstudios-landing-page-main/loopstudios-landing-page-main/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "loopstudios-landing-page"
+	}
+}
